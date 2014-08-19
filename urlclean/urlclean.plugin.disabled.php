@@ -4,7 +4,7 @@
 @author Olivier <http://j.cybride.net/olb>
 @link http://j.cybride.net/olb
 @licence CC by nc sa http://creativecommons.org/licenses/by-nc-sa/2.0/fr/
-@version 2.2.2
+@version 2.2.4
 @description Used to cleanup url from some crap (xtor, utm_) and use url id of RSS feed for clean Feedbrner(feedproxy), feedsportal url
 */
 
@@ -34,6 +34,11 @@ function urlclean_plugin_link(&$events){
             }
             //001 - fin
             $link = validurl( $link_search ); // get article guid as link (and check its format validity)
+        }
+        
+        //
+        if (strpos($link, 'liberation.fr//') !== FALSE) {
+            $link = null;
         }
 
         // fallback to crawl to real url (slowest method and unsecure to privacy)
