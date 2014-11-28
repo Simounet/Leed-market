@@ -15,6 +15,7 @@ wiki plugins : http://projet.idleman.fr/leed/?page=Plugins
 * adblock            - Ajoute la possibilité de supprimer les contenus flash et/ou les images dans les événements (_via_ une blacklist ou une whitelist) - Voir le README dans le dossier adblock pour plus d'infos.
 * cacheListFeed      - Cacher la liste des feed afin de lire les articles en plein écran.
 * DeleteTheCache     - Suppression physique des fichiers mis en cache par Leed.
+* displayPictureTitle - Ajout le contenu du title d'une image en dessous
 * favicon_IOS        - Ajoute une jolie icone sur IOS.
 * fleaditlater       - Ajoute un bouton permettant de marquer un evenement comme "à lire plus tard".
 * fleedicon_content  - Ajoute un favicon à gauche de chaque item lors de la lecture.
