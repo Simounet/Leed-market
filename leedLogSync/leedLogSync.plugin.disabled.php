@@ -65,7 +65,9 @@ function leedLogSync_plugin_AddForm(&$myUser){
 		echo _t('P_LOGSYNC_SHOW_FILE_TITLE', array($fileLog));
 	
 		if (file_exists($fileLog)){ 
+			echo '<pre>';
 			print_r(file_get_contents($fileLog)); 
+			echo '</pre>';
 		} else {
 			echo _t('P_LOGSYNC_SHOW_FILE_ERR', array($fileLog));
 		}
